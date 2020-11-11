@@ -75,7 +75,7 @@ html, body {
     display: inline-block;
     background: #F60000;
     align-self: flex-start;
-    padding: 0px calc(1em);
+    padding: calc(1em) calc(1em) 0;
     position: relative;
 }
 .alsense-brand-container .brand:before,
