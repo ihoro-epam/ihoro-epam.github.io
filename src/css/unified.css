@@ -23,7 +23,7 @@ html, body {
 
 .alsense-left {
     background: #E2000F;
-    background-image: url(../assets/bg.png);
+    background-image: url(https://ihoro-epam.github.io/src/assets/bg.png);
     background-position: right bottom;
     background-repeat: no-repeat;
     flex: 1;
