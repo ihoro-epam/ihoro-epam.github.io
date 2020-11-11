@@ -9,12 +9,12 @@ html, body {
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
+    padding: 20px 40px;
+    letter-spacing: 0.444444px;
     background: #E2000F;
     color: #ffffff;
-    padding: 20px 40px;
     border: none;
     border-radius: 4px;
-    letter-spacing: 0.444444px;
 }
 
 .container .unified-container {
@@ -118,4 +118,73 @@ html, body {
 
 .alsense-brand-container .brand .logo svg {
     fill: white;
+}
+
+/* API customization */
+#api .localAccount .intro,
+#api .social .intro,
+#api .divider h2 {
+    display: none;
+}
+
+#api>.divider {
+    border-top: 1px solid rgba(0, 0, 0, .2);
+    margin: 15px 0;
+}
+
+#api .localAccount .entry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#api .localAccount div:nth-child(2) {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#api .localAccount .entry .buttons {
+    margin-top: 24px;
+    margin-bottom: 15px;
+}
+
+#api .localAccount .entry .entry-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+#api .localAccount .entry .entry-item label {
+    display: none;
+}
+
+#api .localAccount .entry .entry-item input {
+    width: 70%;
+    padding: 14px 18px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+#api .localAccount .create {
+    text-align: center;
+}
+
+#api .social .options {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+#api button#DanfossExchange,
+#api .localAccount .entry .buttons button#next {
+    background: #E2000F;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px 40px;
 }
