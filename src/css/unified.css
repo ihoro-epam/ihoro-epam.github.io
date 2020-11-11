@@ -188,3 +188,11 @@ html, body {
     line-height: 22px;
     padding: 10px 40px;
 }
+
+@media screen and (max-width: 1200px) {
+    #api button#DanfossExchange,
+    #api .localAccount .entry .buttons button#next {
+        background: #FFFFFF;
+        color: #000000;
+    }
+}
