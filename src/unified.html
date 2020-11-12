@@ -104,6 +104,26 @@
     </div>
   </div>
 
+  <script>
+    $(function() {
+      console.log( "ready!" );
 
+      //Change Forget Password Text
+      $('#forgotPassword').html('Reset My Password');
+
+      //Handle Forget password click  (fixing ADB2C error)
+      $( "#forgotPassword" ).click(function(e) {
+        e.preventDefault();
+        const signInsignUpPolicyName = 'b2c_1a_signup_signin_danfoss';
+        const passwordResetPolicyName = 'B2C_1A_PasswordReset';
+        const oldUrl = window.location.href;
+        const newUrl = oldUrl.replace(signInsignUpPolicyName, passwordResetPolicyName);
+        console.log(oldUrl)
+        console.log(newUrl)
+
+        window.location.href = newUrl;
+      });
+    });
+  </script>
 </body>
 </html>
